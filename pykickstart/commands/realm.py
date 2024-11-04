@@ -57,7 +57,8 @@ class F19_Realm(KickstartCommand):
                                                        "membership-software=",
                                                        "one-time-password=",
                                                        "no-password",
-                                                       "computer-ou="))
+                                                       "computer-ou=",
+                                                       "computer-name="))
         except getopt.GetoptError as ex:
             raise KickstartParseError(_("Invalid realm arguments: %s") % ex, lineno=self.lineno)
 
